@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>جامعة فلسطين التقنية خضوري</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=sky-bold" />
+		<link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=alhurra" />
+		<link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=rawy-bold" />
+		<link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=rawy-bold,rawy-thin" />
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+		<link rel="shortcut icon" href="images/logo.png">    	
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="container-fluid main">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header" style="float:right;">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="#">جامعة خضوري</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="#">حول الجامعة</a></li>
+							<li><a href="#">إتصل بنا</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
+				<div class="carousel-inner" role="listbox">
+					<div class="item active background a"></div>
+					<div class="item background b"></div>
+					<div class="item background c"></div>
+				</div>
+			</div>
+  
+			<div class="covertext">
+				<div class="col-lg-10" style="float:none; margin:0 auto;">
+					<h1 class="title">جامعة فلسطين التقنية - خضوري</h1>
+					<h3 class="subtitle">تأسست عام 1930</h3>
+				</div>
+				<div class="col-xs-12 explore">
+					<a href="#" data-toggle="modal" data-target="#login-modal"><button type="button" class="btn btn-lg explorebtn">تسجيل الدخول</button></a>
+				</div>
+			</div>
+  
+			<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+				<div class="modal-dialog">
+					<div class="loginmodal-container">
+						<h1>تسجيل الدخول</h1><br>
+						<form method="post" action="apis/login.php">
+							<input type="text" name="username" placeholder="رقم المستخدم" style="text-align: center">
+							<input type="password" name="password" placeholder="كلمة المرور" style="text-align: center">
+							<input type="submit" name="login" class="login loginmodal-submit" value="تسجيل الدخول">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+		<script src="js/index.js"></script>
+	
+	</body>
+</html>
